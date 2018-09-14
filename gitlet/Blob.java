@@ -3,9 +3,6 @@ package gitlet;
 import java.io.File;
 import java.io.Serializable;
 
-
-//import java.util.*;
-
 public class Blob implements Serializable {
     //For serialization
     static final long serialVersionUID = 0;
