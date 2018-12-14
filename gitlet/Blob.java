@@ -54,7 +54,6 @@ public class Blob implements Serializable {
         return (shortSHA.equals(obj.shortSHA));
     }
 
-
     @Override
     public String toString() {
         return "Blob{" + "SHA='" + SHA + '\''
