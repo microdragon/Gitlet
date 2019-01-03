@@ -8,10 +8,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Gitlet implements Serializable {
-    //Constructor
-    /**
-     * sets directory to directory
-     **/
 
     //Fields
     HashMap<String, Commit> commits;
