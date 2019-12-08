@@ -68,8 +68,6 @@ public class Blob implements Serializable {
         //in case no other object exists with a
         // SHA-1 identifier that starts with the same six digits.
         /*actual filename, input for future checkouts*/
-//        String s = Utils.readContents(directory).toString();
-//        System.out.println(s);
         String bytes = new String(Utils.readContents(directory));
         SHA = Utils.sha1(bytes + fileName);
         shortSHA = SHA.substring(0, 6);

@@ -37,7 +37,6 @@ public class SerializableHelper implements Serializable {
      */
     static void writeObject(Object o, File f) {
         Utils.writeContents(f, helper(o));
-//        Utils.writeContents(helperOut(o, f.getName()), helper(o));
     }
 
     private static byte[] helper(Object obj) {
@@ -46,7 +45,6 @@ public class SerializableHelper implements Serializable {
             ObjectOutputStream objectStream = new ObjectOutputStream(stream);
             objectStream.writeObject(obj);
             objectStream.close();
-//            return stream.toByteArray();
             ByteArrayOutputStream arr = stream;
             stream.close();
             return arr.toByteArray();

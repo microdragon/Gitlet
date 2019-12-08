@@ -132,11 +132,6 @@ public class Gitlet implements Serializable {
         }
         b.setSHAShortSha();
         Commit c = commits.get(headShaCommit);
-//        if (c == null) {
-//            temp.put(filename, b);
-//            serialize();
-//            return;
-//        }
         HashMap<String, Blob> headBlobby = c.blobby;
         if (headBlobby.containsKey(filename)
                 && headBlobby.get(filename).SHA.equals(b.SHA)) {
@@ -196,8 +191,6 @@ public class Gitlet implements Serializable {
     public void status() {
         /** marks current branch * */
         /**displays branches */
-        //System.out.println(branches names);
-        //repeat for staged files, removed files, modifications, and untracked files
         ArrayList<String> sortbranches = new ArrayList<>(branches.keySet());
         Collections.sort(sortbranches);
         System.out.println("=== Branches ===");

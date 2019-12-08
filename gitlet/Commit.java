@@ -30,7 +30,6 @@ public class Commit implements Serializable {
     //String is the filename
     HashMap<String, Blob> parentTracked;
     HashMap<String, Blob> blobby;
-//    File directory;
 
     public Commit(String message, HashMap<String, Blob> arr,
                   HashMap<String, Blob> tr, String pSha) {
